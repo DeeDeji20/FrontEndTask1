@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   background:linear-gradient(to left top,rgb(105, 132, 209) ,rgb(98, 98, 161));
+
+   padding: 3rem 5rem;
+}
+.wrapper{
+   background:linear-gradient(to left top, rgb(29, 29, 49),rgb(105, 132, 209));
+    margin: 20px 0;
+    padding: 40px;
+    /* width: 60%; */
+}
+.wrapper h2{
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+form{
+    margin: 10px 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+form h4{
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+.input-box{
+    position: relative;
+}
+i:not(span>i){
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    color: black;
+    padding: 0 1px;
+}
+
+.input-group:nth-child(4){
+  display: block;
+  flex-direction: column;
+}
+::placeholder{
+    text-transform: capitalize;
+}
+
+input{
+   outline: none; 
+   padding:0 25px;
+   color: rgb(113, 113, 192);
+}
+input[type='text'], input[type='email'], input[type='tel']{
+    width: 250px;
+    height: 40px;
+    margin: 2px 0;
+}
+input[type='radio'], label[for='b1']{
+    /* width: 250px;
+    height: 30px; */
+    margin: 8px 5px;
+    cursor: pointer;
+}
+::placeholder{
+    color: rgb(113, 113, 192);
+}
+select, option{
+    padding: 10px;
+    outline: none;
+    margin-top: 5px;
+    width: 123px;
+    color: rgb(113, 113, 192);
+}
+button[type='submit']{
+    padding: 1rem 10rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(113, 113, 192);
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button[type='submit']:hover{
+   background:linear-gradient(to left top, rgb(98, 98, 161),rgb(105, 132, 209));
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:812px) {
+    body{
+        padding: 3rem 2rem;
+    }
+    .wrapper h2{
+        font-size: 25px;
+    }
+    form h4{
+        font-size: 20px;
+    }
+    button[type='submit']{
+        padding: 1rem 5rem;
+    }
+
+}

@@ -1,0 +1,1 @@
+window.Hub=window.Hub||{sub:function(n,t){if("function"!=typeof t)throw"fn MUST be a function";window.addEventListener(n,n=>t(n,n.detail.data))},pub:function(n,t){var i,e=new CustomEvent(n,{detail:{data:t}});window.dispatchEvent(e)},unsub:function(n,t){window.removeEventListener(n,t)}};
